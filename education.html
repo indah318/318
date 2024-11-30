@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>EDUCATION</title>
+<link rel="icon" href="education.png">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		.custom-marker { list-style-type: square; color: black; }
+		table { width: 100%; border-collapse: collapse; }
+		table th, table td { border: 1px solid black; padding: 8px; }
+		table th { background-color: #315818; color: white; }
+		table td { background-color: #acdd93; }
+		.thumbnail { width: 100px; height: auto; border-radius: 8px; }
+		body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f0f0f0; }
+		header { background-color: #acdd93; color: #315818; padding: 10px 20px; text-align: center; }
+		.primary-nav a { margin: 0 10px; color: #315818; text-decoration: none; }
+		.primary-nav a:hover { text-decoration: underline wavy; text-decoration-color: #315818; }
+		.secondary-nav { display: flex; justify-content: center; margin: 20px 0; }
+		.secondary-nav a { font-size: 18px; margin: 0 15px; color: #315818; text-decoration: none; padding: 10px 15px; border: 1px solid #315818; border-		radius: 8px; transition: background-color 0.3s, color 0.3s; }
+		.secondary-nav a:hover { background-color: #315818; color: #fff; }
+		section { max-width: 800px; margin: auto; padding: 20px; }
+		footer { background-color: #acdd93; color: #315818; text-align: center; padding: 10px 0; margin-top: 20px; }
+		h2 { color: #315818; }
+		.thumbnail-container { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+		.thumbnail { width: 150px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); cursor: pointer; }
+		.thumbnail:hover { transform: scale(1.1); transition: transform 0.2s; }
+		.caption { text-align: center; font-size: 14px; margin-top: 5px; color: #555; }
+	</style>
+</head>
+
+
+<body>
+	<header>
+	<h1>My Education</h1>
+	<nav class="primary-nav">
+		<a href="index.html" target="_blank">Home</a>
+		<a href="about.html" target="_blank">About</a>
+		<a href="education.html" target="_blank">Education</a>
+		<a href="experience.html" target="_blank">Experience</a>
+		<a href="family.html" target="_blank">Family</a>
+		<a href="gallery.html" target="_blank">Gallery</a>
+	</nav>
+	</header>
+
+
+		<!-- Anchor Link -->
+	<nav class="secondary-nav">
+		<a href="#university"><u><b>University</b></u></a>
+		<a href="#highschool"><u><b>High School</b></u></a>
+	</nav>
+
+
+<section id="university">
+	<h2>University</h2>
+	<p>I am currently pursuing a diploma in Information Management at Universiti Teknologi MARA Kampus Segamat.</p>
+
+			<!-- Thumbnail Section -->
+		<p>Here are some highlights from my education journey in UiTM Segamat:</p>
+		<div class="thumbnail-container">
+			<div>
+				<img src="present.jpg" alt="Presentation" class="thumbnail">
+				<div class="caption" style="color: black;">Presentation</div>
+			</div>
+			<div>
+				<img src="class.jpg" alt="Class" class="thumbnail">
+				<div class="caption" style="color: black;">Class</div>
+			</div>
+			<div>
+				<img src="kolej.jpg" alt="College" class="thumbnail">
+				<div class="caption" style="color: black;">College</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- Audio Section -->
+	<section>
+		<p>Spend some time to listen to Wawasan Setia Warga UiTM Song:</p>
+		<audio controls>
+		<source src="Wawasan Setia Warga UiTM 2022.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+		</audio>
+
+
+			<!-- Table -->
+
+		<p>This is some of the courses taken during my diploma:</p>
+		<table>
+		<thead>
+		<tr>
+			<th style="text-align:center;">Course</th>
+			<th style="text-align:center;">Year</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Introduction to Web Content Management and Design</td>
+			<td style="text-align:center;" rowspan="3">2024</td>
+		</tr>
+		<tr>
+			<td>Multimedia for Information Presentation</td>
+		</tr>
+		<tr>
+			<td>Electronic Publishing</td>
+		</tr>
+		<tr>
+			<td>Programming for Information Professional</td>
+			<td style="text-align:center;" rowspan="2">2023</td>
+		</tr>
+		<tr>
+			<td>Human Communication for Information Professionals</td>
+		</tr>
+		</tbody>
+		</table>
+</section>
+
+
+<section id="highschool">
+	<h2>High School</h2>
+	<p>I graduated from SMK Pasir Gudang with a focus on Science and Mathematics.</p>
+
+	<p>This is some of the achievements during my high school year:</p>
+		<ul class="custom-marker">
+			<li>Principal Awards for 3 consecutive semesters</li>
+			<li>Voluntereed in Ihtifal Kebangsaan</li>
+			<li>Participated in Jamboree Pandu Puteri</li>
+		</ul>
+</section>
+
+<footer>
+<p>EST. <img src="love.png" alt="Love" width="20"> 2024</p>
+</footer>
+
+</body>
+</html>

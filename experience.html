@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>EXPERIENCE</title>
+<link rel="icon" href="experience.png">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		.custom-marker { list-style-type: square; color: darkgreen; }
+		body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f0f0f0; }
+		header { background-color: #acdd93; color: #315818; padding: 10px 20px; text-align: center; }
+		section { max-width: 800px; margin: auto; padding: 20px; }
+		footer { background-color: #acdd93; color: #315818; text-align: center; padding: 10px 0; margin-top: 20px; }
+		h2 { color: #315818; }
+		nav a { margin: 0 10px; color: #315818; text-decoration: none; }
+		nav a:hover { text-decoration: underline wavy; text-decoration-color: #315818; }
+		.slideshow-container { position: relative; width: 100%; max-width: 800px; margin: auto; overflow: hidden; border: 2px white; border-radius: 10px;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); height: 80vh; }
+		.slide img { width: 100%; height: 100%; object-fit: cover; }
+		.slide { display: none; text-align: center; }
+		.caption { color: #ffffff; font-size: 16px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center;
+		background: rgba(0, 0, 0, 0.5); }
+		.prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px; padding: 16px; color: white; font-weight: bold;
+		font-size: 18px; transition: 0.6s ease; border-radius: 3px; background: rgba(0, 0, 0, 0.3); }
+		.prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.8); }
+		.prev { left: 0; }
+		.next { right: 0; }
+		.dot { cursor: pointer; height: 15px; width: 15px; margin: 0 2px; background-color: #acdd93; border-radius: 50%; display: inline-block;
+		transition: background-color 0.6s ease; }
+		.active, .dot:hover { background-color: #315818; }
+	</style>
+</head>
+
+
+<body>
+	<header>
+	<h1>My Experience</h1>
+	<nav>
+		<a href="index.html" target="_blank">Home</a>
+		<a href="about.html" target="_blank">About</a>
+		<a href="education.html" target="_blank">Education</a>
+		<a href="experience.html" target="_blank">Experience</a>
+		<a href="family.html" target="_blank">Family</a>
+		<a href="gallery.html" target="_blank">Gallery</a>
+	</nav>
+	</header>
+
+<section>
+		<p>Take a sneak peek at my internship experience!</p>
+	<div class="slideshow-container">
+
+		<!-- Slide 1 -->
+	<div class="slide fade">
+	<img src="stream.jpg" alt="Experience 1">
+	<div class="caption">Monitoring the live streaming</div>
+	</div>
+
+		<!-- Slide 2 -->
+	<div class="slide fade">
+	<img src="deco.jpg" alt="Experience 2">
+	<div class="caption">Wrapping gifts for Hari Sukan Tadika</div>
+	</div>
+
+		<!-- Slide 3 -->
+	<div class="slide fade">
+	<img src="sukan.jpg" alt="Experience 3">
+	<div class="caption">Hari Sukan Tadika!</div>
+	</div>
+
+		<!-- Slide 4 -->
+	<div class="slide fade">
+	<img src="talk.jpg" alt="Experience 3">
+	<div class="caption">Workshop activities</div>
+	</div>
+
+		<!-- Slide 5 -->
+	<div class="slide fade">
+	<img src="merdeka.jpg" alt="Experience 3">
+	<div class="caption">Merdeka celebration!</div>
+	</div>
+		<!-- Navigation Buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<br>
+
+		<!-- Dots/Indicators -->
+	<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	</div>
+</section>
+
+
+		<!-- Thumbnail -->
+<section>
+	<h2>Internship</h2>
+	<p>During my internship at UTM, I was assigned to IT Department.</p>
+
+
+		<!-- Ordered List -->
+
+	<h2>Job Responsibilities</h2>
+	<ol>
+		<li>Designed and implemented responsive web pages.</li>
+		<li>Discussing with my supervisor for the website layout.</li>
+		<li>Monitoring live streaming of Pusat Islam for their monthly sharing.</li>
+	</ol>
+</section>
+
+
+
+<script>
+	let slideIndex = 1; showSlides(slideIndex);
+	function plusSlides(n) { showSlides(slideIndex += n); }
+	function currentSlide(n) { showSlides(slideIndex = n); }
+	function showSlides(n) { let i; let slides = document.getElementsByClassName("slide"); let dots = document.getElementsByClassName("dot");
+	if (n > slides.length) { slideIndex = 1 }
+	if (n < 1) { slideIndex = slides.length }
+	for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+	for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }
+	slides[slideIndex - 1].style.display = "block";
+	dots[slideIndex - 1].className += " active"; }
+</script>
+
+<footer>
+<p>EST. <img src="love.png" alt="Love" width="20"> 2024</p>
+</footer>
+
+</body>
+</html>
