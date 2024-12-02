@@ -10,11 +10,17 @@
 
 	<style>
 		.gallery { column-count: 4; column-gap: 15px; padding: 20px; max-width: 1200px; margin: 0 auto; }
-		.gallery-item { margin-bottom: 15px; break-inside: avoid; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px 		rgba(0, 0, 0, 0.1); }
+		.gallery-item { margin-bottom: 15px; break-inside: avoid; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
 		.gallery-item img { width: 100%; display: block; }
 
 		nav a { margin: 0 10px; color: #315818; text-decoration: none; }
 		nav a:hover { text-decoration: underline wavy; text-decoration-color: #315818; }
+		
+			/* Back to Top Button */
+		#backToTop { position: fixed; bottom: 20px; right: 20px; background-color: #315818; color: white; border: none; border-radius: 50%; width: 50px; height: 50px;
+			    font-size: 24px; text-align: center; line-height: 50px; cursor: pointer; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+			    display: none; /* Initially hidden */ z-index: 1000; }
+		#backToTop:hover { background-color: #acdd93; color: #315818; }
 	</style>
 </head>
 
@@ -64,10 +70,25 @@
 		<div class="gallery-item"><img src="sky2.jpg" alt="sky"></div>
 		<div class="gallery-item"><img src="moon.jpg" alt="moon"></div>
 	</div>
-
+	
+// Back to Top Button
+<button id="backToTop" title="Go to top">&#8679;</button>
+	
 <footer>
 <p>EST. <img src="love.png" alt="Love" width="20"> 2024</p>
 </footer>
+
+	<script>
+  // Get the button
+  const backToTopButton = document.getElementById("backToTop");
+
+  // Show the button when scrolling down
+  window.onscroll = function() { if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) 
+  { backToTopButton.style.display = "block"; } else { backToTopButton.style.display = "none"; } };
+
+  // Scroll to the top when clicking the button
+  backToTopButton.onclick = function() { window.scrollTo({ top: 0, behavior: "smooth" }); };
+</script>
 
 </body>
 </html>
