@@ -9,6 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style>
+		ul.heart-list { list-style-type: none; }
+		ul.heart-list li::marker { content: "❤️"; color: red; }
 		nav a { margin: 0 10px; color: #315818; text-decoration: none; }
 		nav a:hover { text-decoration: underline wavy; text-decoration-color: #315818; }
 
@@ -44,7 +46,7 @@
 		<p>I believe in lifelong learning and the power of collaboration. My goal is to make technology accessible and impactful for everyone.</p>
 
 		<h2>My Interests</h2>
-		<ul>
+		<ul class="heart-list">
 			<li>Coding and web design</li>
 			<li>Reading and exploring new things</li>
 			<li>Watching <sub>badminton matches</sub> and <sup>F1 races</sup> live on TV</li>
